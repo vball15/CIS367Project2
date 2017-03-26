@@ -342,7 +342,7 @@ function drawScene() {
                             break;
 
                         case 1:
-                            mat4.translate(armCFs[1], armCFs[1], vec3.fromValues(0/100, 0/100, 0));
+                            mat4.translate(armCFs[1], armCFs[1], vec3.fromValues(0, 0, 0));
                             break;
 
                     }
@@ -401,7 +401,7 @@ function drawScene() {
                         mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0.75 / 100, -0.7 / 100, 0));
                         break;
                     case 1:
-                        mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0 / 100, 0 / 100, 0));
+                        mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0, 0, 0));
                         break;
                 }
                 //mat4.rotateX(armCFs[0], armCFs[0], ringSpinAngle);
@@ -505,7 +505,7 @@ function drawBasketball(){
                     mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(-0.75/100, 0.7/100, 0));
                     break;
                 case 1:
-                    mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0.0 / 100, 0 / 100, 0 / 100));
+                    mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0, 0, 0));
 
             }
             //mat4.rotateX(armCFs[0], armCFs[0], -ringSpinAngle);
@@ -541,9 +541,9 @@ function drawBasketballUp(){
                 mat4.rotateY(armCFs[0], armCFs[0], ringSpinAngle);
             break;
             case 1:
-                mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0 / 100, 0 / 100, 0 / 100));
-                mat4.rotateX(armCFs[0], armCFs[0], -ringSpinAngle);
-                mat4.rotateY(armCFs[0], armCFs[0], -ringSpinAngle);
+                mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0, 0, 0));
+                mat4.rotateX(armCFs[0], armCFs[0], 0);
+                mat4.rotateY(armCFs[0], armCFs[0], 0);
         }
 
         //mat4.rotateX(armCFs[0], armCFs[0], ringSpinAngle);
@@ -578,7 +578,7 @@ function drawBasketballDown(){
                 mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0.05 / 100, 0 / 100, -1.7 / 100));
                 break;
             case 1:
-                mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0.0 / 100, 0 / 100, 0 / 100));
+                mat4.translate(armCFs[0], armCFs[0], vec3.fromValues(0, 0, 0));
 
         }
 
@@ -610,7 +610,7 @@ function drawplayers() {
                         break;
 
                     case 1:
-                        mat4.translate(armCFs[1], armCFs[1], vec3.fromValues(0.0/100, 0/100, 0));
+                        mat4.translate(armCFs[1], armCFs[1], vec3.fromValues(0, 0, 0));
                         break;
                 }
 
