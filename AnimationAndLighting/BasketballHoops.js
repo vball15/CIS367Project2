@@ -14,7 +14,7 @@ class BasketballHoops {
         let pole1color = vec3.fromValues(22/255, 28/255, 33/255);
         let pole2color = vec3.fromValues(55/255, 70/255, 85/255);
 
-        this.rim = new Torus(gl, 0.1, 0.01, 30, 10);
+        this.rim = new Torus(gl, 0.1, 0.01, 36, 24);
         this.backboard = new TruncatedConeOrig(gl, 0.45, 0.45, 0.03, 4, 2, backboard1, backboard2);
         this.pole = new Cylinder(gl, 0.045, 0.045, 2.1, 40, pole1color, pole2color);
         this.secondPole = new Cylinder(gl, 0.04, 0.04, 0.33, 40, 2, pole1color, pole2color);
